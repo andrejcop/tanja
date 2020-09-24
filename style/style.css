@@ -1,16 +1,29 @@
 * {
-  font-weight: 300px;
+  font-family: "MuliRegular" !important;
+  font-weight: normal;
+  font-style: normal;
 }
 
 html, body {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .TopInfoContainer {
   width: 100%;
   min-height: 6%;
   background-color: #2B3463;
+}
+
+.info span {
+  position: relative;
+  top: 10px;
+  height: 25px;
+  padding-right: 190px;
+  color: #FFFFFF;
+  font: normal normal 300 20px/25px Muli;
+  letter-spacing: 1px;
 }
 
 .NavigacijaLogoContainer {
@@ -63,6 +76,22 @@ li a:hover {
   background: url("../images/Slika1.png") center;
 }
 
+.PreventivniPregledContainer {
+  margin: auto;
+  width: 579px;
+  height: 123px;
+  border: 2px solid #A74532;
+  background: #FFFFFFC2 0% 0% no-repeat padding-box;
+  position: relative;
+  top: 357px;
+  text-align: center;
+  color: #A74532;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font: normal normal 300 20px/13px;
+  padding-top: 28px;
+}
+
 .KdoSmoContainer, .OsebjaContainer {
   width: 100%;
   min-height: 560px;
@@ -84,7 +113,7 @@ li a:hover {
 .NaslovKdoSmo {
   padding-top: 44px;
   padding-bottom: 57px;
-  color: #D47B53;
+  color: #A74532;
   font-size: 25px;
 }
 
