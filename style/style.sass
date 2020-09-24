@@ -4,13 +4,17 @@ $bela: #FFFFFF
 $svtlomodra: #9398AD
 $siva: #707070
 $skorbela: #FCFBF7
+
+* 
+    font-weight: 300px
+
 html, body 
     width: 100%
     height: 100%
 
 .TopInfoContainer 
     width: 100%
-    height: 60px
+    min-height: (60/1000*100)+%
     background-color: $tmnomodra
 
 .NavigacijaLogoContainer 
@@ -59,13 +63,28 @@ li a:hover
 
 .KdoSmoContainer, .OsebjaContainer 
     width: 100%
-    height: 560px
+    min-height: 560px
     padding-top: 65px
+    padding-bottom: 30px
 
 .KdoSmoZnotraj, .Osebja
     margin: auto
-    height: 423px
-    background-color: $svtlomodra
+    min-height: 423-30px
+    //background-color: $svtlomodra
+    text-align: center
+
+.ikone
+    display: block
+    height: 43px
+
+.NaslovKdoSmo
+    padding-top: 44px
+    padding-bottom: 57px 
+    color: $oranzna
+    font-size: 25px
+    
+
+.VsebineKdoSmo
 
 .VsebinskaSlika 
     width: 100%
@@ -79,3 +98,20 @@ footer
     width: 100%
     background-color: $tmnomodra
 
+
+
+
+
+//full hd zasloni
+
+@media only screen and (min-width: 1600px) 
+
+  .container
+      max-width: 1366px
+
+//čudne višine
+@media only screen and (max-height: 800px) 
+
+    .TopInfoContainer 
+        height: 40px
+  

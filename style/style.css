@@ -1,3 +1,7 @@
+* {
+  font-weight: 300px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -5,7 +9,7 @@ html, body {
 
 .TopInfoContainer {
   width: 100%;
-  height: 60px;
+  min-height: 6%;
   background-color: #2B3463;
 }
 
@@ -61,14 +65,27 @@ li a:hover {
 
 .KdoSmoContainer, .OsebjaContainer {
   width: 100%;
-  height: 560px;
+  min-height: 560px;
   padding-top: 65px;
+  padding-bottom: 30px;
 }
 
 .KdoSmoZnotraj, .Osebja {
   margin: auto;
-  height: 423px;
-  background-color: #9398AD;
+  min-height: 393px;
+  text-align: center;
+}
+
+.ikone {
+  display: block;
+  height: 43px;
+}
+
+.NaslovKdoSmo {
+  padding-top: 44px;
+  padding-bottom: 57px;
+  color: #D47B53;
+  font-size: 25px;
 }
 
 .VsebinskaSlika {
@@ -85,5 +102,17 @@ footer {
   height: 100px;
   width: 100%;
   background-color: #2B3463;
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .TopInfoContainer {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
