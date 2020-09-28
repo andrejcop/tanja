@@ -4,8 +4,8 @@ $tmnomodra: #2B3463
 $bela: #FFFFFF
 $svtlomodra: #9398AD
 $siva: #707070
-$skorbela: #fcfbf7a2
-$skorbela1: #FCFBF7
+$prozorna: #fcfbf7a2
+$skorbela: #FCFBF7
 
 * 
     font-family: 'MuliRegular'!important
@@ -21,7 +21,8 @@ html, body
     width: 100%
     min-height: (60/1000*100)+%
     background-color: $tmnomodra
-.info span 
+
+.infospan 
     position: relative
     top: 10px
     height: 25px
@@ -29,6 +30,16 @@ html, body
     color: $bela
     font: normal normal 300 20px/25px Muli
     letter-spacing: 1px
+
+.infosvg
+    padding-right: 22px
+    
+.infospan a 
+     text-decoration: none
+     color: white
+
+.infospan a:hover 
+    text-decoration: none
 
 .NavigacijaLogoContainer 
     height: 277-72+8px
@@ -40,7 +51,6 @@ html, body
     height: 121px
     margin: auto
 
-
 ul 
   list-style-type: none
   margin: 0
@@ -48,30 +58,38 @@ ul
   overflow: hidden
 
 li 
-  float: left
+  float: right
   display: block
+  width: 19%
 
 
 li a 
     display: block
     color: $tmnomodra
     text-align: center
-    padding-left: 100px
     padding-top: 63px
     text-decoration: none
+    transition: 200ms
   
 li a:hover 
     text-decoration: none
+    color: $tmnooranzna
+
+.spremenibarvo 
+    transition: 200ms
+
+li a:hover .spremenibarvo
+    fill: $tmnooranzna
 
 .LogoContainer
     height: 127px
-    width: 275px
     background-color: $svtlomodra
     display: block
+    float: left!important
 
 .NaslovnaSlika 
     width: 100%
-    height: 535px
+    height: (535/1000*100)+%
     background: url('../images/Slika1.png') center
 
 .PreventivniPregledContainer
@@ -81,7 +99,7 @@ li a:hover
     border: 2px solid $tmnooranzna
     background: #FFFFFFC2 0% 0% no-repeat padding-box
     position: relative
-    top: 357px
+    top: 65%
     text-align: center
     color: $tmnooranzna
     font-size: 20px
@@ -89,13 +107,11 @@ li a:hover
     font: normal normal 300 20px/13px
     padding-top: 385-357px
 
-
-
-.KdoSmoContainer, .OsebjaContainer 
+.KdoSmoContainer, .OsebjaContainer  
     width: 100%
-    min-height: 560px
+    min-height: (560/1000*100)+%x
     padding-top: 65px
-    padding-bottom: 30px
+    padding-bottom: 100px
 
 .KdoSmoZnotraj, .Osebja
     margin: auto
@@ -113,26 +129,64 @@ li a:hover
     color: $tmnooranzna
     font-size: 25px
     
-
 .VsebineKdoSmo
+    padding-right: 30px
+    padding-left: 30px
+    font: normal normal normal 16px/20px Muli
+    letter-spacing: 0.8px
+    color: $tmnomodra
 
 .VsebinskaSlika 
     width: 100%
     height: 535px
     background: url('../images/Slika2.png') center
     
-
 .OsebjaContainer 
     padding-bottom: 103px
+
+.slikeosebja
+    width: 135px
+    height: 132px
+    border: 1px solid $tmnooranzna
+    border-radius: (135/2)+px
+    margin: auto
+
+.naslovdebel
+    font: normal normal bold 20px/25px Muli
+    color: $tmnooranzna
+    display: block
+
+.naslovtank 
+    font: normal normal 300 20px/25px Muli
+
 footer 
-    height: 100px
+    min-height: 100px
     width: 100%
     background-color: $tmnomodra
 
+.noga 
+    color: $bela
+    text-align: center
+    margin: auto
+    width: 1000px
+
+.notranjanoga
+    padding-top: 42px
+    font: normal normal 300 16px/20px Muli;
+    letter-spacing: 0.8px;
+
+.vl 
+    height: 20px
+    width: 1px
+    background: $bela
+    margin-top: 0
+    margin-top: 42px
+    float: right
 
 
 
 
+     
 //full hd zasloni
 
 @media only screen and (min-width: 1600px) 
@@ -146,3 +200,5 @@ footer
     .TopInfoContainer 
         height: 40px
   
+//optimizacija za manjše ekrane (navigacija, slike...)
+//@media only screen and (max-width: 1600px) 

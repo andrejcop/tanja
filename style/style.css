@@ -16,7 +16,7 @@ html, body {
   background-color: #2B3463;
 }
 
-.info span {
+.infospan {
   position: relative;
   top: 10px;
   height: 25px;
@@ -24,6 +24,19 @@ html, body {
   color: #FFFFFF;
   font: normal normal 300 20px/25px Muli;
   letter-spacing: 1px;
+}
+
+.infosvg {
+  padding-right: 22px;
+}
+
+.infospan a {
+  text-decoration: none;
+  color: white;
+}
+
+.infospan a:hover {
+  text-decoration: none;
 }
 
 .NavigacijaLogoContainer {
@@ -46,33 +59,45 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
   display: block;
+  width: 19%;
 }
 
 li a {
   display: block;
   color: #2B3463;
   text-align: center;
-  padding-left: 100px;
   padding-top: 63px;
   text-decoration: none;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 li a:hover {
   text-decoration: none;
+  color: #A74532;
+}
+
+.spremenibarvo {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+li a:hover .spremenibarvo {
+  fill: #A74532;
 }
 
 .LogoContainer {
   height: 127px;
-  width: 275px;
   background-color: #9398AD;
   display: block;
+  float: left !important;
 }
 
 .NaslovnaSlika {
   width: 100%;
-  height: 535px;
+  height: 53.5%;
   background: url("../images/Slika1.png") center;
 }
 
@@ -83,7 +108,7 @@ li a:hover {
   border: 2px solid #A74532;
   background: #FFFFFFC2 0% 0% no-repeat padding-box;
   position: relative;
-  top: 357px;
+  top: 65%;
   text-align: center;
   color: #A74532;
   font-size: 20px;
@@ -94,9 +119,9 @@ li a:hover {
 
 .KdoSmoContainer, .OsebjaContainer {
   width: 100%;
-  min-height: 560px;
+  min-height: 56% x;
   padding-top: 65px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 
 .KdoSmoZnotraj, .Osebja {
@@ -117,6 +142,14 @@ li a:hover {
   font-size: 25px;
 }
 
+.VsebineKdoSmo {
+  padding-right: 30px;
+  padding-left: 30px;
+  font: normal normal normal 16px/20px Muli;
+  letter-spacing: 0.8px;
+  color: #2B3463;
+}
+
 .VsebinskaSlika {
   width: 100%;
   height: 535px;
@@ -127,10 +160,50 @@ li a:hover {
   padding-bottom: 103px;
 }
 
+.slikeosebja {
+  width: 135px;
+  height: 132px;
+  border: 1px solid #A74532;
+  border-radius: 67.5px;
+  margin: auto;
+}
+
+.naslovdebel {
+  font: normal normal bold 20px/25px Muli;
+  color: #A74532;
+  display: block;
+}
+
+.naslovtank {
+  font: normal normal 300 20px/25px Muli;
+}
+
 footer {
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   background-color: #2B3463;
+}
+
+.noga {
+  color: #FFFFFF;
+  text-align: center;
+  margin: auto;
+  width: 1000px;
+}
+
+.notranjanoga {
+  padding-top: 42px;
+  font: normal normal 300 16px/20px Muli;
+  letter-spacing: 0.8px;
+}
+
+.vl {
+  height: 20px;
+  width: 1px;
+  background: #FFFFFF;
+  margin-top: 0;
+  margin-top: 42px;
+  float: right;
 }
 
 @media only screen and (min-width: 1600px) {
