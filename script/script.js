@@ -19,18 +19,20 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {    
      
-    if(isInViewport(box)) {    
+    if(isInViewport(noga)) {    
         zaustavi();
+        console.log("Debug zastavi = laufa")
         something();
-        cez = true;
-        
+        cez = true;    
     } 
+
     premik(Math.floor((document.documentElement.scrollTop - dejanskiscroll)/300));
+
     if(document.documentElement.scrollTop - dejanskiscroll < 0 && cez == true) {
         box.style.position = "static";
         vsebina.style.position  = "static";
         NaslovnaSlikaPodpoglavja.style.position = "static";
-        infscroll.style.height =  "1px";
+        infscroll.style.height =  "2px";
         meni.style.opacity = "0";
         cez = false;
     }
@@ -63,15 +65,14 @@ function isInViewport(el) {
 
 
 function zaustavi() {
-    meni.style.opacity = "1";
     box.style.position = "fixed";
     box.style.bottom = "0";
     vsebina.style.position  = "fixed";
     vsebina.style.bottom = visinabox + "px";
     NaslovnaSlikaPodpoglavja.style.position = "fixed";
     NaslovnaSlikaPodpoglavja.style.bottom = visinavsebine + visinabox + "px";
+    meni.style.opacity = "1";
     infscroll.style.height = scroll.length * 500 + "px";
-
 }
 
 
@@ -100,6 +101,3 @@ function premik(b) {
 
     }
 }
-
-
-

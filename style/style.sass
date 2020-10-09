@@ -12,6 +12,10 @@ $skorbela: #FCFBF7
     font-weight: normal
     font-style: normal
     z-index: 2
+    transition: 0
+
+*:focus
+    outline: none
 
 html, body 
     width: 100%
@@ -30,7 +34,7 @@ html, body
     position: relative
     top: 10px
     height: 25px
-    padding-right: 190px
+    padding-right: 178px
     color: $bela
     font: normal normal 300 20px/25px Muli
     letter-spacing: 1px
@@ -84,6 +88,7 @@ li a:hover
 
 li a:hover .spremenibarvo
     fill: $tmnooranzna
+    stroke: $tmnooranzna
 
 .LogoContainer
     height: 127px
@@ -199,15 +204,16 @@ footer
 .vsebina
     width: 100%
     min-height: 500px
+    overflow: hidden
 
 .okvirvsebine 
     margin: auto
     min-height: 423-30px
     padding-top: 72px
-    padding-bottom: 203px
+    padding-bottom: 115px
 
 .meni
-    max-width: 31%!important
+    max-width: 29%!important
     padding-top: 110px
     opacity: 0
     transition: 200ms
@@ -256,6 +262,10 @@ footer
     width: 1px
     padding-top: 300px
 
+
+#1
+   padding-top: 500px!important
+
 .scrolldisplaybefore
     transform: translate(0, 140px)
     opacity: 0
@@ -269,6 +279,59 @@ footer
     transition: 300ms
     position: absolute
     z-index: -1
+
+//kontakt
+
+.kontakt, .kontakt1 
+    width: 100%
+    height: 36px
+    border: 1px solid $tmnooranzna
+    border-radius: 10px
+    margin-bottom: 10px
+    padding-left: 10px
+    padding-right: 10px
+    transition: 100ms
+
+.kontakt:focus, .kontakt1:focus
+    border: 1px solid $oranzna
+    
+.kontakt1
+    width: 100%
+    height: 129px
+    resize: none
+
+::placeholder 
+    text-align: center
+    font: normal normal normal 15px/19px Muli
+    letter-spacing: 0.75px
+    color: #B53C2A
+    opacity: 0.49
+
+.ikonakontakta
+    padding-right: 10px
+
+.kontaktnipodatki
+    margin: 50px 0px 50px 22px
+    font: normal normal normal 16px/25px Muli
+    letter-spacing: 0.8px
+    color: #293466
+
+.kontaktnipodatki a
+    text-decoration: none
+    font: normal normal normal 16px/25px Muli
+    letter-spacing: 0.8px
+    display: block
+    max-width: 260px
+    margin-bottom: 20px
+    color: #293466
+
+.kontaktnipodatki a:hover
+    text-decoration: none
+    font: normal normal normal 16px/25px Muli
+    letter-spacing: 0.8px
+    color: #293466
+
+
 
 
 //full hd zasloni
