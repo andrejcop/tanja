@@ -47,19 +47,19 @@
     <!--center, vsebina-->
     
     <div class="KdoSmoContainer">
-      <div class="KdoSmoZnotraj container row">
+      <div class="KdoSmoZnotraj container row" ontouchstart="touch(event)" ontouchmove="premiktouch(event)" ontouchend="konctouch()">
 
-        <div class="col">
+        <div class="col-lg stolp nottrans">
           <span class="ikone"><span class="ikone"><svg xmlns="http://www.w3.org/2000/svg" fill="#A74532" height="43" viewBox="0 0 24 24" width="43"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span></span>
           <div class="NaslovKdoSmo">
             KDO SMO
           </div>
-          <div class=VsebineKdoSmo>
+          <div id="demo" class=VsebineKdoSmo>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </div> 
         </div>
 
-        <div class="col">
+        <div class="col-lg stolp">
           <span class="ikone"><svg xmlns="http://www.w3.org/2000/svg" fill="#A74532" height="43" viewBox="0 0 24 24" width="43"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
           <div class="NaslovKdoSmo">
             KAJ DELAMO
@@ -70,7 +70,7 @@
         </div>
 
         
-        <div class="col">
+        <div class="col-lg stolp">
           <span class="ikone"><svg xmlns="http://www.w3.org/2000/svg" fill="#A74532" height="43" viewBox="0 0 24 24" width="43"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
           <div class="NaslovKdoSmo">
             KJE NAS NAJDETE
@@ -79,6 +79,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </div>
         </div>
+
 
       </div>
     </div>
@@ -90,7 +91,7 @@
     <div class="OsebjaContainer">
       <div class="Osebja container row">
 
-        <div class="col">
+        <div class="col-lg">
           <div class="slikeosebja"></div>
           <div class="NaslovKdoSmo">
             <p class="naslovdebel">Tanja Kobolt dr. dent. med.</p>
@@ -101,7 +102,7 @@
           </div> 
         </div>
 
-        <div class="col">
+        <div class="col-lg">
           <div class="slikeosebja"></div>
           <div class="NaslovKdoSmo">
             <p class="naslovdebel">Janez Novak, dipl. med. ses.</p>
@@ -113,7 +114,7 @@
         </div>
 
         
-        <div class="col">
+        <div class="col-lg">
           <div class="slikeosebja"></div>
           <div class="NaslovKdoSmo">
             <p class="naslovdebel">Janez Novak, dipl. zob.</p>
@@ -139,9 +140,9 @@
       </div>
     </footer>
 
-    <!--scripti
-    <script src="script/script.js"></script> 
--->
+    <!--scripti-->
+    <script src="script/scriptmobil.js"></script> 
+
     <!--bootstrap js knjižnice...   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
