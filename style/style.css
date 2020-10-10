@@ -435,8 +435,8 @@ footer {
     margin-right: auto;
     -webkit-transform: translate(1000px, 0);
             transform: translate(1000px, 0);
-    -webkit-transition: 10ms;
-    transition: 10ms;
+    -webkit-transition: 0ms;
+    transition: 0ms;
   }
   .KdoSmoContainer, .OsebjaContainer {
     overflow: hidden;

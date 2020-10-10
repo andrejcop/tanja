@@ -7,6 +7,18 @@ var done;
 var neustavi;
 var drzati;
 
+container.addEventListener("touchstart", function(e) {
+    touch(e);
+}, {passive: true});
+
+container.addEventListener("touchend", function(e) {
+    konctouch(e);
+}, {passive: true});
+
+container.addEventListener("touchmove", function(e) {
+    premiktouch(e);
+}, {passive: true});
+
 function touch(event) {
     zacetnipremik = event.touches[0].clientX;
     drzati = true;
@@ -30,17 +42,17 @@ function premiktouch(event) {
 
 
 function translacija(par) {
-        if (par < -150) {
+        if (par < -120) {
             if (drzati == true) {
                 translacijanaprej();
             }
             done = true;
-        } else if (par > 150)  {
+        } else if (par > 120)  {
             if (drzati == true) {
                 translacijanazaj();
             }
         } else  {  
-                col[stran].style.transition = '10ms';
+                col[stran].style.transition = '0ms';
                 col[stran].style.transform = 'translate(' + par + 'px , 0)';
                 neustavi = false;
                 done = false;
